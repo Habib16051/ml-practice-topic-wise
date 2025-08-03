@@ -15,12 +15,10 @@ genres = [0, 0, 1, 1]  # 0: Action, 1: Comedy
 knn = KNeighborsClassifier(n_neighbors=3)
 knn.fit(features, genres)
 
-
 # Function to predict movie genre based on rating and duration
 def predict_genre(rating, duration):
     feature = np.array([[rating, duration]])
     return knn.predict(feature)[0]
-
 
 # Example usage
 if __name__ == "__main__":
