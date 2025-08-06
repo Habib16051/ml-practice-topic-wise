@@ -23,7 +23,7 @@ def predict_spam(message: str) -> str:
     """Predict if a message is spam or not spam."""
     message_vector = vectorizer.transform([message])
     prediction = model.predict(message_vector)[0]
-    return "Spam" if prediction == 1 else "Not Spam"
+    return "Spam" if prediction == 0 else "Not Spam"
 
 
 test_message = "Get rich quickly"
