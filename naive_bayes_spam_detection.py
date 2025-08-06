@@ -26,9 +26,6 @@ def predict_spam(message: str) -> str:
     return "Spam" if prediction == 1 else "Not Spam"
 
 
-# Example usage
-if __name__ == "__main__":
-    test_message = "Get rich quickly"
-    result = predict_spam(test_message)
-    print(f"The message '{test_message}' is classified as: {result}")
-    # Output: The message 'Get your free meds now' is classified as: Spam
+test_message = "Get rich quickly"
+result = predict_spam(test_message)
+print(f"The message '{test_message}' is classified as: {result}")
