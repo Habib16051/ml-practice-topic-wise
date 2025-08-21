@@ -4,7 +4,6 @@ from sklearn.model_selection import GridSearchCV, cross_val_score, StratifiedKFo
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.metrics import accuracy_score, f1_score, confusion_matrix, classification_report
 from sklearn.feature_selection import SelectKBest, chi2
-from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 import seaborn as sns
 import time
